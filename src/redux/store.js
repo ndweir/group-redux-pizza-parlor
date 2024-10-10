@@ -12,9 +12,9 @@ const pizzaList = (state = [], action) => {
     return [...state, action.payload]
   }
 
-  // if(action.type === 'REMOVE_PIZZA'){
-  //   return 
-  // }
+  if(action.type === 'ADD_PIZZA_ORDER'){
+    return [...state, action.payload]
+  }
 
   return state;
 }
