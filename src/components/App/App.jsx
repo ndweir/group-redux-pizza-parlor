@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-import PizzaForm from '../PizzaForm/PizzaForm';
+//import PizzaForm from '../PizzaForm/PizzaForm';
 import PizzaList from '../PizzaList/PizzaList';
 import PizzaListItem from '../PizzaListItem/PizzaListItem';
 import Checkout from '../Checkout/Checkout';

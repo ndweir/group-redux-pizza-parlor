@@ -6,19 +6,19 @@ export default function Checkout(){
     const handleCheckout = () => {
 
         dispatch({
-            type: 'SET_PIZZA',
+            type: 'SET_ORDER',
             payload: []
         })
     }
 
-    const allPizzaList = useSelector(store => store.pizzaList)
+    const allPizzaList = useSelector(store => store.pizzaOrder)
 
 
     return(
         <div>
             <ul>
             {allPizzaList.map((pizza) =>(
-                <li key={pizza.id}>{pizza.name}: {pizza.price} </li>
+                <li key={pizza.id}>{pizza.name}: ${pizza.price} </li>
             ))}
             </ul>
             <button onClick={handleCheckout}>Checkout</button>

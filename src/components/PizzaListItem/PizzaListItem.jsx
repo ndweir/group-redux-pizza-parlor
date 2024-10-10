@@ -18,9 +18,9 @@ export default function PizzaListItem({pizza}){
         <div>
             {/* {pizza.image_path}  */}
             <div>
-            {pizza.name}
+           <h3>{pizza.name}</h3> 
             {pizza.description}
-            {pizza.price}
+            <div>${pizza.price}</div>
             </div>
             <button onClick={addPizzaToOrder}>Add Pizza To Order</button>
 
