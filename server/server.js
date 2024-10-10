@@ -5,6 +5,7 @@ const port = process.env.PORT || 5001;
 /** ---------- MIDDLEWARE ---------- **/
 app.use(express.json());
 app.use(express.static('build'));
+app.use(express.urlencoded({extended: true}));
 
 /** ---------- EXPRESS ROUTES ---------- **/
 const pizzaRouter = require('./routes/pizza.router.js');
