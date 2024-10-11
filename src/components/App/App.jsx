@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-//import PizzaForm from '../PizzaForm/PizzaForm';
+import PizzaForm from '../PizzaForm/PizzaForm';
 import PizzaList from '../PizzaList/PizzaList';
 import PizzaListItem from '../PizzaListItem/PizzaListItem';
 import Checkout from '../Checkout/Checkout';
@@ -50,21 +50,22 @@ function App() {
         <li>
           <Link to="/checkout">Checkout</Link>
         </li>
+        <li>
+          <Link to="/orderForm">Order Form</Link>
+        </li>
         <Route exact path="/">
         <PizzaList />
         </Route>
-
-       
       <Route exact path="/checkout">
       <Checkout />
       </Route>
+      <Route exact path="/orderForm">
+        <PizzaForm />
+      </Route>
+
       </div>
 
     </Router>
-
-
-
-
 
 
     </div>

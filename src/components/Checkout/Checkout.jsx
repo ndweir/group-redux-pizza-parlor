@@ -12,7 +12,7 @@ export default function Checkout(){
     }
 
     const allPizzaList = useSelector(store => store.pizzaOrder)
-
+    console.log('Checkout', allPizzaList)
 
     return(
         <div>
